@@ -8,7 +8,7 @@
     "body": "\\\\usepackage$2{${1:package name}}$0"
   "defaultpackage":
     "prefix": "texdocument"
-    "body": "\\\\documentclass[dvipdfmx]{jsarticle}\n\\\\usepackage{mymacros}\n\\\\usepackage{amsmath,amssymb,amsthm}\n\\\\usepackage{tcolorbox}\n\\\\usepackage{mathrsfs}\n\\\\usepackage{tikz}\n\\\\newtheorem{theo}{定理}\n\\\\newtheorem{defi}{定義}\n\\\\newtheorem{lemm}{補題}\n\\\\newtheorem{plob}{演習問題}\n\\\\begin{document}\n$1\n\\\\end{document}"
+    "body": "\\\\documentclass[dvipdfmx]{jsarticle}\n\\\\usepackage{mymacros}\n\\\\usepackage{amsmath,amssymb,amsthm}\n\\\\usepackage{tcolorbox}\n\\\\usepackage{mathrsfs}\n\\\\usepackage{tikz}\n\\\\newtheorem{theo}{定理}\n\\\\newtheorem{defi}{定義}\n\\\\newtheorem{lemm}{補題}\n\\\\newtheorem{plob}{演習問題}\n\\\\newtheorem{axio}{公理}\n\\\\begin{document}\n$1\n\\\\end{document}"
 
 # document level
   'part':
@@ -49,6 +49,9 @@
   'ploblem':
     'prefix': 'plob'
     'body': '\\\\begin{plob}\n\t$0\n\\\\end{plob}'
+  'axiom':
+    'prefix': 'axio'
+    'body': '\\\\begin{axio}\n\t$0\n\\\\end{axio}'
   'align(*)':
     'prefix': 'align'
     'body': '\\\\begin{align$1}\n\t$0\n\\\\end{align$1}'
