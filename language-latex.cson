@@ -37,6 +37,18 @@
   '\\begin{}...\\end{}':
     'prefix': 'begin'
     'body': '\\\\begin{${1:env}}$2\n\t$0\n\\\\end{${1:env}}'
+  'definition':
+    'prefix': 'defi'
+    'body': '\\\\begin{defi}\n\t$0\n\\\\end{defi}'
+  'theorem':
+    'prefix': 'theo'
+    'body': '\\\\begin{theo}\n\t$0\n\\\\end{theo}'
+  'lemma':
+    'prefix': 'lemm'
+    'body': '\\\\begin{lemm}\n\t$0\n\\\\end{lemm}'
+  'ploblem':
+    'prefix': 'plob'
+    'body': '\\\\begin{plob}\n\t$0\n\\\\end{plob}'
   'align(*)':
     'prefix': 'align'
     'body': '\\\\begin{align$1}\n\t$0\n\\\\end{align$1}'
