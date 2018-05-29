@@ -8,7 +8,7 @@
     "body": "\\\\usepackage$2{${1:package name}}$0"
   "defaultpackage":
     "prefix": "texdocument"
-    "body": "\\\\documentclass[dvipdfmx]{jsarticle}\n\\\\usepackage{mymacros}\n\\\\usepackage{amsmath,amssymb,amsthm}\n\\\\usepackage{tcolorbox}\n\\\\usepackage{mathrsfs}\n\\\\usepackage{tikz}\n\\\\newtheorem{theo}{定理}\n\\\\newtheorem{defi}{定義}\n\\\\newtheorem{lemm}{補題}\n\\\\newtheorem{plob}{演習問題}\n\\\\newtheorem{axio}{公理}\n\\\\begin{document}\n$1\n\\\\end{document}"
+    "body": "\\\\documentclass[dvipdfmx]{jsarticle}\n\\\\usepackage{mymacros}\n\\\\usepackage{amsmath,amssymb,amsthm}\n\\\\usepackage{tcolorbox}\n\\\\usepackage{mathrsfs}\n\\\\usepackage{tikz}\n\\\\usepackage{multicol}\n\\\\newtheorem{theo}{定理}\n\\\\newtheorem{defi}{定義}\n\\\\newtheorem{lemm}{補題}\n\\\\newtheorem{plob}{演習問題}\n\\\\newtheorem{axio}{公理}\n\\\\begin{document}\n$1\n\\\\end{document}"
 
 # document level
   'part':
@@ -37,6 +37,9 @@
   '\\begin{}...\\end{}':
     'prefix': 'begin'
     'body': '\\\\begin{${1:env}}$2\n\t$0\n\\\\end{${1:env}}'
+  'multicols':
+    'prefix': 'multicols'
+    'body': '\\\\begin{multicols}{2}\n\t$0\n\\\\end{multicols}'
   'definition':
     'prefix': 'defi'
     'body': '\\\\begin{defi}\n\t$0\n\\\\end{defi}'
