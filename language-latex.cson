@@ -8,7 +8,7 @@
     "body": "\\\\usepackage$2{${1:package name}}$0"
   "defaultpackage":
     "prefix": "texdocument"
-    "body": "\\\\documentclass[dvipdfmx]{jsarticle}\n\\\\usepackage{mymacros}\n\\\\usepackage{amsmath,amssymb,amsthm}\n\\\\usepackage{tcolorbox,mathrsfs,multicol,subfiles}\n\\\\usepackage{tikz}\n\\\\newtheorem{defi}{定義}[section]\n\\\\newtheorem{theo}[defi]{定理}\n\\\\newtheorem{lemm}[defi]{補題}\n\\\\newtheorem{plob}{演習問題}\n\\\\newtheorem{axio}[defi]{公理}\n\\\\title{}\n\\\\author{}\n\\\\date{}\n\\\\begin{document}\n\\\\maketitle\n\$1\n\\\\end{document}"
+    "body": "\\\\documentclass[dvipdfmx]{jsarticle}\n\\\\usepackage{mymacros}\n\\\\usepackage{amsmath,amssymb,amsthm}\n\\\\usepackage{tcolorbox,mathrsfs,multicol,subfiles}\n\\\\usepackage{tikz}\n\\\\usetikzlibrary{cd}\n\\\\newtheorem{defi}{定義}[section]\n\\\\newtheorem{theo}[defi]{定理}\n\\\\newtheorem{lemm}[defi]{補題}\n\\\\newtheorem{corl}[defi]{系}\n\\\\newtheorem{plob}{演習問題}\n\\\\newtheorem{axio}[defi]{公理}\n\\\\newtheorem{rem}[defi]{Rem}\n\\\\newtheorem{fact}[defi]{Fact}\n\\\\newtheorem{exam}[defi]{例}\n\\\\newtheorem{note}[defi]{Note}\n\\\\title{}\n\\\\author{}\n\\\\date{}\n\\\\begin{document}\n\\\\maketitle\n\$1\n\\\\end{document}"
   "subfiles":
     "prefix": "subfiles"
     "body": "\\\\documentclass[../main]{subfiles}\n\\\\begin{document}\n$1\n\\\\end{document}"
@@ -61,6 +61,21 @@
   'proposition':
     'prefix': 'prop'
     'body': '\\\\begin{prop}\n\t$0\n\\\\end{prop}'
+  'corllary':
+    'prefix': 'corl'
+    'body': '\\\\begin{corl}\n\t$0\n\\\\end{corl}'
+  'remark':
+    'prefix': 'rem'
+    'body': '\\\\begin{rem}\n\t$0\n\\\\end{rem}'
+  'fact':
+    'prefix': 'fact'
+    'body': '\\\\begin{fact}\n\t$0\n\\\\end{fact}'
+  'example':
+    'prefix': 'exam'
+    'body': '\\\\begin{exam}\n\t$0\n\\\\end{exam}'
+  'note':
+    'prefix': 'note'
+    'body': '\\\\begin{note}\n\t$0\n\\\\end{note}'
   'align(*)':
     'prefix': 'align'
     'body': '\\\\begin{align$1}\n\t$0\n\\\\end{align$1}'
