@@ -106,6 +106,12 @@
   'tabular':
     'prefix': 'tabular'
     'body': '\\\\begin{tabular}{${1:column alignment}}\n\t$0\n\\\\end{tabular}'
+  'tikzpicture':
+    'prefix': 'tikz'
+    'body': '\\\\begin{tikzpicture}[auto]\n\t$0\n\\\\end{tikzpicture}'
+  'center':
+    'prefix': 'center'
+    'body': '\\\\begin{center}\n\t$0\n\\\\end{center}'
 
 # element
   'inline math - $$':
