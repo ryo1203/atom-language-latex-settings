@@ -131,25 +131,25 @@
     'body': '\\\\ref{$1}$0'
   'parenlr':
     'prefix': 'parenlr'
-    'body': '\parenlr{$0}'
+    'body': '\\\\parenlr{$0}'
   'bracketlr':
     'prefix': 'bracketlr'
-    'body': '\bracketlr{$0}'
+    'body': '\\\\bracketlr{$0}'
   'bracelr':
     'prefix': 'bracelr'
-    'body': '\bracelr{$0}'
+    'body': '\\\\bracelr{$0}'
   'abracket':
     'prefix': 'abracket'
-    'body': '\abracket{$0}'
+    'body': '\\\\abracket{$0}'
   'abracketlr':
     'prefix': 'abracketlr'
-    'body': '\abracketlr{$0}'
+    'body': '\\\\abracketlr{$0}'
   'floor':
     'prefix': 'floor'
-    'body': '\floor{$0}'
+    'body': '\\\\floor{$0}'
   'floorlr':
     'prefix': 'floorlr'
-    'body': '\floorlr{$0}'
+    'body': '\\\\floorlr{$0}'
 
 # math, taken from  https://github.com/SublimeText/LaTeXTools/blob/master/LaTeX%20math.sublime-completions
 '.text.tex.latex .string.other.math':
