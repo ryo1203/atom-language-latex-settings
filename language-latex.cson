@@ -88,6 +88,9 @@
   'enumerate':
     'prefix': 'enumerate'
     'body': '\\\\begin{enumerate}\n\t\\\\item $0\n\\\\end{enumerate}'
+  'enumarabicp':
+    'prefix': 'enumarabicp'
+    'body': '\\\\begin{enumarabicp}\n\t\\\\item $0\n\\\\end{enumarabicp}'
   'equation(*)':
     'prefix': 'equation'
     'body': '\\\\begin{equation$1}\n\t$0\n\\\\end{equation$1}'
